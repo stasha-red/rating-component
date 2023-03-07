@@ -1,0 +1,18 @@
+{
+  "name": "design-systems-platform-team-interview-case",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --watch",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.2.3",
+    "lit": "^2.2.2"
+  },
+  "devDependencies": {
+    "vite": "^2.9.5"
+  }
+}
