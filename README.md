@@ -9,6 +9,7 @@
 </p>
 
 <h2>Installation</h2>
+
 With npm 
 <code>npm i</code>
 
@@ -28,9 +29,9 @@ Default active medium size view
 <h3>Properties</h3>
 <h4>Size</h4>
 prop: <code>size</code> <br>
-value: <code>'L' | 'M' | 'S'</code><br>
-default: <code>'M'</code><br><br>
-<code>&lt;lit-rating <b>size=&quot;L&quot;</b>&gt;&lt;/lit-rating&gt;</code>
+value: <code>'l' | 'm' | 's'</code><br>
+default: <code>'m'</code><br><br>
+<code>&lt;lit-rating <b>size=&quot;l&quot;</b>&gt;&lt;/lit-rating&gt;</code>
 
 <h4>State</h4>      
 prop: <code>state</code> <br>
