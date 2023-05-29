@@ -1,7 +1,7 @@
 export enum RatingSize {
-    Large = 'L', 
-    Medium = 'M',
-    Small = 'S'  
+    Large = 'l', 
+    Medium = 'm',
+    Small = 's'  
 };
 
 export enum RatingState {

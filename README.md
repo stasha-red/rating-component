@@ -1,32 +1,57 @@
 <h1>Rating component</h1>
 
-<code>&lt;case-rating&gt;&lt;/case-rating&gt;</code>
+<h2>Description</h2>
+<p>It is a star rating component, that allows users to rate products, services, or experiences with precision by selecting half-star increments, enabling them to provide more nuanced feedback. The visually intuitive interface enhances the user experience, fostering more accurate representations of ratings and facilitating informed decision-making.</p>
 
-<h2>Properties</h2>
-<h3>Size</h3>
+<p>
+<img src="./src/assets/screen.jpg" alt=""/>
+</p>
+
+<h2>Installation</h2>
+<code>npm i</code>
+
+Start dev server
+<code>npm run dev</code>
+
+Build for production
+<code>npm run build</code>
+
+Locally preview production build
+<code>npm run preview</code>
+
+<h2>Usage</h2>
+Default active medium size view 
+<code>&lt;lit-rating&gt;&lt;/lit-rating&gt;</code>
+
+<h3>Properties</h3>
+<h4>Size</h4>
 prop: <code>size</code> <br>
 value: <code>'L' | 'M' | 'S'</code><br>
 default: <code>'M'</code><br><br>
-<code>&lt;case-rating <b>size=&quot;L&quot;</b>&gt;&lt;/case-rating&gt;</code>
+<code>&lt;lit-rating <b>size=&quot;L&quot;</b>&gt;&lt;/lit-rating&gt;</code>
 
-<h3>State</h3>      
+<h4>State</h4>      
 prop: <code>state</code> <br>
 value: <code>'active' | 'inactive' | 'disabled'</code><br>
 default: <code>'active'</code> <br><br>
   
-<code>&lt;case-rating <b>state=&quot;inactive&quot;</b>&gt;&lt;/case-rating&gt;</code>
+<code>&lt;lit-rating <b>state=&quot;inactive&quot;</b>&gt;&lt;/lit-rating&gt;</code>
     
-<h3>Rating</h3>
-prop: <code>rating </code><br>
+<h4>Value</h4>
+prop: <code>value </code><br>
 value: <code>1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 </code><br>
 default: <code>3 </code><br><br>
   
-<code>&lt;case-rating <b>rating=&quot;3&quot;</b>&gt;&lt;/case-rating&gt;</code>
+<code>&lt;lit-rating <b>value=&quot;3&quot;</b>&gt;&lt;/lit-rating&gt;</code>
 
-<h2>Event Handler</h2>
-<h3>onChange</h3>
+<h3>Event Handler</h3>
+<h4>onChange</h4>
 prop: <code>onchange </code><br>
 value type: <code>Function</code><br>
 default: <code>(event: Event) =&gt; console.log(event) </code><br><br>
   
-<code>&lt;case-rating <b>onchange=&quot;Function&quot;</b>&gt;&lt;/case-rating&gt;</code>
+<code>&lt;lit-rating <b>onchange=&quot;Function&quot;</b>&gt;&lt;/lit-rating&gt;</code>
+
+<h2>License</h2>
+
+[MIT](https://choosealicense.com/licenses/mit/)

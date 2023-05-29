@@ -2,65 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>interview-case</title>    
+    <title>Rating examples</title>    
+    <link rel="stylesheet" href="//assets.lego.com/fonts/v1/cera-pro.css"/>
+    <link rel="stylesheet" href="/src/styles/index.css"/>
     <script type="module" src="/src/components/index.ts"></script>
-    <link rel="stylesheet" href="https://assets.lego.com/fonts/v1/cera-pro.css">
-    <style>
-      html,
-      body {
-        font-family: 'Cera Pro';
-        max-width: 1400px;
-        margin: 0 auto;
-      }
-
-      .examples {    
-        display: flex;
-        padding: 0;
-        margin: 20px 0;
-        align-items: center;
-        list-style: none;
-        text-align: center;
-      }
-
-      .examples__item {
-        flex: 1 1 auto;
-        margin: 0 20px;
-      }
-
-      code {
-        display: block;
-        padding: 20px;
-        font-size: 18px;
-        color: #3d3d3d;
-        background-color: #f9f9f9;
-      }
-    </style>
   </head>
   <body>
     <h1>Rating component</h1>
-    <code>&lt;case-rating&gt;&lt;/case-rating&gt;</code>
+    <code>&lt;lit-rating&gt;&lt;/lit-rating&gt;</code>
 
     <h2>Properties</h2>
     <section>
       <h3>Size</h3>
       <code>
         prop: size <br>
-        value: 'L' | 'M' | 'S'<br>
-        default: 'M' <br><br>
-        &lt;case-rating <b>size=&quot;L&quot;</b>&gt;&lt;/case-rating&gt;
+        value: 'l' | 'm' | 's'<br>
+        default: 'm' <br><br>
+        &lt;lit-rating <b>size=&quot;L&quot;</b>&gt;&lt;/lit-rating&gt;
       </code>
       <ul class="examples">
         <li class="examples__item">
-          <case-rating size="L"></case-rating>
-          <p>Large (L)</p>
+          <lit-rating size="l"></lit-rating>
+          <p>Large (l)</p>
         </li>
         <li class="examples__item">
-          <case-rating size="M"></case-rating>
-          <p>Medium (M)</p>
+          <lit-rating size="m"></lit-rating>
+          <p>Medium (m)</p>
         </li>
         <li class="examples__item">
-          <case-rating size="S"></case-rating>
-          <p>Small (S)</p>
+          <lit-rating size="s"></lit-rating>
+          <p>Small (s)</p>
         </li>
       </ul>
     </section>
@@ -71,47 +42,47 @@
         prop: state <br>
         value: 'active' | 'inactive' | 'disabled'<br>
         default: 'active' <br><br>
-        &lt;case-rating <b>state=&quot;inactive&quot;</b>&gt;&lt;/case-rating&gt;
+        &lt;lit-rating <b>state=&quot;inactive&quot;</b>&gt;&lt;/lit-rating&gt;
       </code>
       <ul class="examples">
         <li class="examples__item">
-          <case-rating state="inactive"></case-rating>
+          <lit-rating state="inactive"></lit-rating>
           <p>Inactive</p>
         </li>
         <li class="examples__item">
-          <case-rating state="active"></case-rating>
+          <lit-rating state="active"></lit-rating>
           <p>Active</p>
         </li>
         <li class="examples__item">
-          <case-rating state="disabled"></case-rating>
+          <lit-rating state="disabled"></lit-rating>
           <p>Disabled</p>
         </li>
       </ul>
     </section>
 
     <section>
-      <h3>Rating</h3>
+      <h3>Value</h3>
       <code>
-        prop: rating <br>
+        prop: value <br>
         value: 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 <br>
         default: 3 <br><br>
-        &lt;case-rating <b>rating=&quot;3&quot;</b>&gt;&lt;/case-rating&gt;
+        &lt;lit-rating <b>value=&quot;3&quot;</b>&gt;&lt;/lit-rating&gt;
       </code>
       <ul class="examples">
         <li class="examples__item">
-          <case-rating rating="0" state="inactive"></case-rating>
+          <lit-rating value="0" state="inactive"></lit-rating>
           <p>0 stars</p>
         </li>
         <li class="examples__item">
-          <case-rating rating="1.5" state="inactive"></case-rating>
+          <lit-rating value="1.5" state="inactive"></lit-rating>
           <p>1.5 stars</p>
         </li>
         <li class="examples__item">
-          <case-rating rating="3" state="inactive"></case-rating>
+          <lit-rating value="3" state="inactive"></lit-rating>
           <p>3 stars</p>
         </li>
         <li class="examples__item">
-          <case-rating rating="4.5" state="inactive"></case-rating>
+          <lit-rating value="4.5" state="inactive"></lit-rating>
           <p>4.5 stars</p>
         </li>
       </ul>
@@ -123,11 +94,11 @@
       prop: onchange <br>
       value type: Function<br>
       default: (event: Event) =&gt; console.log(event) <br><br>
-      &lt;case-rating <b>onchange=&quot;Function&quot;</b>&gt;&lt;/case-rating&gt;
+      &lt;lit-rating <b>onchange=&quot;Function&quot;</b>&gt;&lt;/lit-rating&gt;
     </code>
     <ul class="examples">
       <li class="examples__item">
-        <case-rating></case-rating>
+        <lit-rating></lit-rating>
       </li>
     </ul>
   </body>

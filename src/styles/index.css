@@ -1,0 +1,28 @@
+html,
+body {
+  font-family: 'Cera Pro';
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.examples {    
+  display: flex;
+  padding: 0;
+  margin: 20px 0;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.examples__item {
+  flex: 1 1 auto;
+  margin: 0 20px;
+}
+
+code {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+  color: #3d3d3d;
+  background-color: #f9f9f9;
+}

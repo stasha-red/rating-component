@@ -1,7 +1,7 @@
 {
-  "name": "design-systems-platform-team-interview-case",
-  "version": "1.0.0",
-  "author": "",
+  "name": "rating-component",
+  "version": "1.0.1",
+  "author": "Anastasiia Redchenkova",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
