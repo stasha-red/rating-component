@@ -2,12 +2,14 @@
 
 <h2>Description</h2>
 <p>It is a star rating component, that allows users to rate products, services, or experiences with precision by selecting half-star increments, enabling them to provide more nuanced feedback. The visually intuitive interface enhances the user experience, fostering more accurate representations of ratings and facilitating informed decision-making.</p>
+<p>It is build with <a href="https://lit.dev/">Lit</a>. Lit is a simple library for building fast, lightweight web components. At Lit's core is a boilerplate-killing component base class that provides reactive state, scoped styles, and a declarative template system that's tiny, fast and expressive.</p>
 
 <p>
 <img src="./src/assets/screen.jpg" alt=""/>
 </p>
 
 <h2>Installation</h2>
+With npm 
 <code>npm i</code>
 
 Start dev server
