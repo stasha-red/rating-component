@@ -27,8 +27,7 @@ jobs:
       matrix:
         node-version: [16.x]
     steps:    
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -49,14 +48,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download page
-        uses: actions/download-artifact@master
+      - uses: actions/download-artifact@master
         with:
+          name: page
           path: dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'src/assets'
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v2
